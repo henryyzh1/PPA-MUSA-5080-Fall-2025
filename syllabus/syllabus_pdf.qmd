@@ -1,0 +1,183 @@
+---
+title: "MUSA 5080/CPLN 5920: Public Policy Analytics"
+subtitle: "Fall 2025"
+format: 
+  pdf:
+    documentclass: article
+    geometry: margin=1in
+    fontsize: 11pt
+    colorlinks: true
+    toc: false
+    toc-depth: 2
+---
+
+## Course Information
+
+**Time:** Mondays, 10:15 AM – 1:14 PM\
+**Location:** Fagin 214\
+**Instructor:** Dr. Elizabeth Delmelle\
+**Email:** [delmelle\@design.upenn.edu](mailto:delmelle@design.upenn.edu)\
+**Office Hours:** Mondays 1:30–3:00 PM/ Tuesdays 9:30-10:30am or by appointment [*Use Link To Sign Up*](https://calendly.com/delmelle/open-house-office-hours)\
+**TA Office Hours:**
+
+-   Jiayue Ma (majiayue\@design.upenn.edu): Thursdays 10-11am
+-   Zhanchao Yang (zhanchao\@design.upenn.edu): Tuesdays 1-2pm
+
+## Course Description
+
+This course teaches advanced spatial analysis and introduces data science and machine learning tools within the context of urban planning and public policy. Unlike private-sector data science focused solely on optimization, our approach emphasizes public goods, governance, and equity. We'll cover topics including transportation, housing, public health, and criminal justice, using both spatial tools and predictive modeling to help guide resource allocation and policy design.
+
+**Key Focus:** Understanding concepts deeply rather than just completing code. We emphasize fairness, transparency, and understanding the implications of our models.
+
+------------------------------------------------------------------------
+
+## Learning Outcomes
+
+By the end of the semester, students will be able to:
+
+-   Build and evaluate predictive models for public policy questions
+-   Critically assess model generalizability, effectiveness, and bias
+-   Navigate the full data science workflow: wrangling, exploration, modeling, and communication
+-   Integrate spatial and temporal variables into policy-oriented models
+-   Communicate uncertainty, limitations, and equity impacts to decision-makers
+-   Create professional data science portfolios using Quarto
+
+------------------------------------------------------------------------
+
+## Course Materials
+
+### Required Texts (All Free Online)
+
+-   Ken Steif, [*Public Policy Analytics*](https://urbanspatial.github.io/PublicPolicyAnalytics/)
+-   Hadley Wickham et al., [*R for Data Science*](https://r4ds.hadley.nz/)
+-   Robin Lovelace et al., [*Geocomputation with R*](https://r.geocompx.org/)
+-   Kyle Walker, [*Analyzing US Census Data*](https://walker-data.com/census-r/)
+
+### Supplemental Material
+
+-   Selected chapters from [*Visualization for Social Data Science*](https://vis4sds.github.io/vis4sds/)
+-   Additional readings provided weekly via Canvas
+
+------------------------------------------------------------------------
+
+## Assessment Structure
+
+| Component | Weight | Description |
+|------------------------|--------------------|----------------------------|
+| **Weekly In-Class Quizzes** | 35% | Concept-focused assessments (10 quizzes, lowest score dropped) |
+| **Lab Assignments (5 total)** | 20% | Implementation + feedback response graded on 3-point scale |
+| **Midterm: House Prediction Competition** | 15% | Team-based modeling competition with lightning presentations |
+| **Final Modeling Challenge** | 25% | Real-world policy problem requiring model selection and justification |
+| **Participation & Weekly Notes** | 5% | Attendance, engagement, and weekly learning documentation |
+
+### Lab Assignment Structure
+
+**Philosophy:** Lab assignments assess coding implementation, documentation, and professional response to feedback. Knowledge of underlying concepts is evaluated through weekly quizzes. Ultimately, the labs will form your final portfolio for this course so the amount of effort you put into each assignment is for your own benefit.
+
+**Lab Assignment Structure:**
+
+Labs 1, 2, 4, and 5 are individual assignments. **Lab 3 (House Prediction)** is completed in teams of 3-4 students.
+
+**Assignment Sequence:**
+
+1.  **Census Data Exploration** (Individual)
+2.  **Neighborhood Indicators** (Individual)
+3.  **House Price Prediction Competition** (Team-based) - *Serves as Midterm*
+4.  **Parole Reform Analysis** - Logistic Regression (Individual)
+5.  **Bike Share Rebalancing** - Space-Time Modeling (Individual)
+
+**Final Modeling Challenge:** Teams work on a real-world policy problem and choose the most appropriate modeling approach from the semester (linear regression, count models, logistic regression, or space-time modeling). The challenge emphasizes problem framing, methodology justification, and complete workflow implementation.
+
+**GitHub-Based Feedback Response:** Each assignment (after the first) must include a `feedback-response.md` file addressing: 
+
+- How you incorporated previous TA feedback
+- Specific improvements made to visual clarity of figures, documentation, writeups 
+- Challenges encountered and solutions attempted 
+- Questions or areas needing clarification
+
+**Weekly Notes Requirement:** Students maintain a `weekly-notes/` folder in their GitHub repo with files named `week-XX-notes.md`. Notes should include:
+
+- Key concepts from lecture and readings
+- Coding techniques learned and challenges faced
+- Questions or confusion points 
+- Connections to previous weeks or policy applications 
+- Personal reflections on the material
+
+*Notes are checked weekly for completion and effort (not accuracy) and serve as quiz preparation aids.*
+
+**Lab Grading Scale:**
+
+-   **2 points:** Complete implementation + feedback incorporation + clear documentation.
+-   **1 point:** Somewhat complete, poor feedback integration or unclear work
+-   **0 points:** Not submitted, incomplete, or no evidence of engaging with feedback
+
+**Weekly Quiz:** AI advancements have changed how I view assessment. I am no longer concerned about students ability to complete coding-based assignments. AI, while certainly not perfect, will generally produce a solution to assignment prompts. My major concern now is how well students are able to really comprehend the concepts and fundamentals of what is being done in order to be appropriate critics of what AI produces.
+
+Therefore, each class period will begin with an in-person, written quiz on material from the prior week or the prior lab assignment. There will be a total of 10 quizzes, but I will drop the lowest one.
+
+## Course Format
+
+**Structure:** Each 3-hour session combines conceptual lectures with hands-on labs
+
+**Expectations:**
+
+-   Bring charged laptops for live coding and group work
+-   Maintain weekly Quarto-based portfolio with reflections and notes (*ideally* students will take written notes and then transfer these to quarto after class for optimal retainment.)
+-   Revise past work based on TA feedback for portfolio improvement
+-   Engage actively in discussions and collaborative problem-solving
+-   Attend class!
+
+**Technology:** All work will be completed in R using Quarto for reproducible, professional documentation.
+
+**GitHub Classroom:** We will use GitHub Classroom for assignment distribution and submission. Each assignment creates a personal repository containing starter materials and instructions. Students customize, complete, and push their work to GitHub. This workflow builds professional version control skills while enabling efficient feedback and collaboration.
+
+------------------------------------------------------------------------
+
+## Weekly Schedule
+
+| Week | Date | Topic | Assessment | Lab Assignment | GitHub Deliverables |
+|------------|------------|------------|------------|------------|------------|
+| 1 | Sep 8 | Course Intro • Quarto & GitHub Setup • R Review | — | Setup & Portfolio Init | Initial repo + Week 1 notes |
+| 2 | Sep 15 | Census Data + Wrangling • Basic Visualization | Q1 | **Lab 1 Start:** Census Exploration | Week 2 notes + Lab 1 progress |
+| 3 | Sep 22 | EDA • Visual Design Foundations | Q2 | Lab 1 continued | Week 3 notes + Lab 1 progress |
+| 4 | Sep 29 | Spatial Operations • Neighborhood Indicators | Q3 | **Lab 1 Due** + **Lab 2 Start** | Week 4 notes + Lab 1 final + Lab 2 start |
+| 5 | Oct 6 | Linear Regression I • Making Predictions | Q4 | Lab 2 continued | Week 5 notes + Lab 2 progress |
+| 6 | Oct 13 | Linear Regression II • Model Evaluation | Q5 | **Lab 2 Due** + **Lab 3 Start** (Teams) | Week 6 notes + Lab 2 final + Lab 3 start |
+| 7 | Oct 20 | Spatial Autocorrelation • Intro to Spatial ML | Q5 | **Lab 3 Continue** (Teams) | Week 7 notes + Lab 2 final + Lab 3 start |
+| 8 | Oct 27 | **House Prediction Presentations** + Count Models-Predictive Policing | **Competition Presentations** | **Lab 3 Due** | Week 8 notes + Lab 3 final + presentations |
+| 9 | Nov 3 | Logistic Regression I • Geographic Cross-Validation | Q6 |  | Week 9 notes |
+| 10 | Nov 10 | Logistic Regression II • Recidivism Case Study | Q7 | **Lab 4 Start:** Parole Reform Analysis | Week 10 notes + Lab 4 start |
+| 11 | Nov 17 | Space-Time Modeling • Temporal Analysis | Q8 | **Lab 4 Due** + **Lab 5 Start:** Bike Share | Week 11 notes + Lab 4 final + Lab 5 start |
+| 12 | Nov 24 | Text Analysis + \*k\*-means clustering. Final Challenge Introduced in Class | Q9 | Lab 5 continued | Week 12 notes + Lab 5 start |
+| 13 | Dec 1 | **Final Challenge Continued - Teams work in class.** | Q10 | Lab 5 Due | Lab 5 final |
+| 14 | Dec 8 | **Final Challenge Presentations** |  |  | Final Challenge Deliverables Due in 1 week. |
+
+------------------------------------------------------------------------
+
+## Academic Integrity & AI Policy
+
+### Core Principle
+
+All written work must be in your own words and demonstrate your understanding of concepts.
+
+### AI Tool Guidelines
+
+-   **Permitted:** Using AI for debugging code, understanding error messages, understanding or decoding samples.
+-   **Not Permitted:** Copying/pasting AI-generated text for assignments, having AI complete entire problems. Using AI to interpret your results or do your data analysis. Providing responses suggested by AI that you do not fully understand.
+-   **Quiz Preparation:** Use AI to help understand concepts, but ensure you can explain ideas without assistance
+
+------------------------------------------------------------------------
+
+## Additional FAQ Information
+
+**Late Assignments**: Please turn in your assignments on time. I do very much understand that you have many other courses and I've done by best to make the required work reasonable. However, the concepts in this course build on each other and therefore assignments need to be turn in on time.
+
+**Revising & Resubmitting Assignments**: I've minimized the grading of assignments for reasons outlined above. You'll receive general feedback on how to improve in future work, but as long as you complete the assignment and continue to improve, you'll 'pass' the assignment. Therefore, there is no option to revise and resubmit for a higher grade.
+
+**Academic Integrity**: [*Please see the university policy on academic integrity*](https://catalog.upenn.edu/pennbook/code-of-academic-integrity/). Cases of academic dishonesty on assignments will result in a score of 0 on the assignment.
+
+**Policy:** 24-hour response time goal. For coding issues, please share your repository link or create a GitHub Issue for technical problems.
+
+------------------------------------------------------------------------
+
+*This syllabus may be modified during the semester. Check Canvas for the most current version.*
