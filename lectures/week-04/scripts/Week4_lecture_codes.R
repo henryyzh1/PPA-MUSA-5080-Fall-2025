@@ -5,7 +5,7 @@ library(tidyverse)
 library(ggplot2)
 library(tigris)
 library(tidycensus)
-census_api_key("Your Code Here")
+census_api_key("42bf8a20a3df1def380f330cf7edad0dd5842ce6")
 # Read a shapefile
 pa_counties <- st_read("data/Pennsylvania_County_Boundaries.shp")
 
@@ -50,7 +50,7 @@ county_shapes <- st_geometry(pa_counties)
 county_data <- st_drop_geometry(pa_counties)
 
 # Simple plot
-plot(pa_counties)
+plot(pa_counties[1])
 
 # Just the geometry
 plot(st_geometry(pa_counties))
@@ -106,9 +106,6 @@ ggplot(metro_tracts) +
   geom_sf() +
   theme_void()
 
-ggplot(rural_tracts) +
-  geom_sf() +
-  theme_void()
 
 ##spatial joins
 # Get census tract data
@@ -145,7 +142,7 @@ head(distance_matrix)
 # Calculate county areas
 pa_counties <- pa_counties %>%
   mutate(
-    area_sqkm = as.numeric(st_area(.)) / 1000000  # Convert to sq km
+    area_sqkm = as.numeric(st_area(pa_counties)) / 1000000  # Convert to sq km
   )
 
 # Population density (need to join census data)
@@ -157,7 +154,7 @@ pa_counties <- pa_counties %>%
 
 # Distance from each county to a specific point
 philadelphia <- pa_counties %>%
-  filter(NAME == "Philadelphia")
+  filter(COUNTY_NAM == "Philadelphia")
 philly_center <- st_centroid(philadelphia)
 
 pa_counties <- pa_counties %>%
@@ -204,11 +201,11 @@ pa_tracts_data <- get_acs(
 )
 
 # Join demographic data to tract boundaries
-tracts <- tracts %>%
+census_tracts <- census_tracts %>%
   left_join(pa_tracts_data, by = "GEOID")
 
 # Identify vulnerable populations (low-income tracts)
-low_income_tracts <- tracts %>%
+low_income_tracts <- census_tracts %>%
   filter(median_incomeE < 40000)
 
 low_income_tracts  <- low_income_tracts  %>%
@@ -258,10 +255,10 @@ p2 <- ggplot() +
 p1 | p2
 
 districts <- districts %>%
-  st_transform(st_crs(tracts))
+  st_transform(st_crs(census_tracts))
 
 # Average income by congressional district
-tracts_by_district <- tracts %>%
+tracts_by_district <- census_tracts %>%
   st_join(districts) %>%
   st_drop_geometry() %>%
   group_by(OBJECTID) %>%
