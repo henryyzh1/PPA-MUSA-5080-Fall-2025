@@ -489,8 +489,7 @@ Take a few moments to clean up your markdown document and then write a line or t
    - Use `embed-resources: true` in YAML so it's a single file
    - All code should run without errors
    - All maps and charts should display correctly
-
-**File naming:** `LastName_FirstName_Assignment2.html` and `LastName_FirstName_Assignment2.qmd`
+2. Submit the correct and working links of your assignment on Canvas
 
 ---
 
