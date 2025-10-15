@@ -23,3 +23,8 @@
 - [Lab 0 Template](labs/lab_0/lab0_template.qmd)
 - [Lab 1 Template](labs/lab_1/assignment1_template.qmd)
 - [Lab 2 Template](labs/lab_2/assignment2_template.qmd)
+
+## GitHub Resources
+- [GitHub Desktop Documentation](https://docs.github.com/en/desktop)
+- [Git](https://git-scm.com/)
+- [Github Documentation](https://docs.github.com/en)
