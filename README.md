@@ -19,11 +19,13 @@
 - [Week 5: Intro to Predictive Modeling with Linear Regression](https://musa-5080-fall-2025.github.io/MUSA-5080-Fall-2025/lectures/week-05/lecture/week5-complete-slides.html)
 - [Week 6: Spatial Machine Learning - Linear Regression Cont.](https://musa-5080-fall-2025.github.io/MUSA-5080-Fall-2025/lectures/week-06/lecture/week6_slides.html)
 - [Week 7: Spatial Machine Learning - Spatial Autocorrelation](https://musa-5080-fall-2025.github.io/MUSA-5080-Fall-2025/lectures/week-07/lecture/week7_slides.html)
+- [Week 9: Predictive Policing, Dirty Data, and Count Regression](https://musa-5080-fall-2025.github.io/MUSA-5080-Fall-2025/lectures/week-09/lecture/week9_slides.html)
 ## Labs 
 - [Lab setup instructions](https://musa-5080-fall-2025.github.io/MUSA-5080-Fall-2025/labs/lab_setup_instructions.html)
 - [Lab 0 Template](labs/lab_0/lab0_template.qmd)
 - [Lab 1 Template](labs/lab_1/assignment1_template.qmd)
 - [Lab 2 Template](labs/lab_2/assignment2_template.qmd)
+- [Lab 4 Instructions](labs/lab_4/Assignment4_Instructions.md)
 - [Mid Term instructions](https://musa-5080-fall-2025.github.io/MUSA-5080-Fall-2025/labs/midterm/Midterm_2025.html)
 
 ## GitHub Resources
