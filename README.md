@@ -27,6 +27,7 @@
 - [Mid Term instructions](https://musa-5080-fall-2025.github.io/MUSA-5080-Fall-2025/labs/midterm/Midterm_2025.html)
 
 ## GitHub Resources
-- [GitHub Desktop Documentation](https://docs.github.com/en/desktop)
+- [GitHub Desktop Docs](https://docs.github.com/en/desktop)
 - [Git](https://git-scm.com/)
-- [Github Documentation](https://docs.github.com/en)
+- [Github Docs](https://docs.github.com/en)
+- [Quarto Docs](https://quarto.org/)
