@@ -18,7 +18,7 @@ execute:
   message: false
 ---
 
-## About This Lab
+## About This Exercise
 
 In this exercise, you will build a spatial predictive model for burglaries using count regression and spatial features.
 

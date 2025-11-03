@@ -1625,11 +1625,9 @@ Where:
 - Use 1000m (1 km) bandwidth
 - Standard in predictive policing literature
 
----
-
-![](images/kd.png)
 
 ---
+
 ## Calculating KDE in R
 
 ```r
@@ -1730,13 +1728,6 @@ If we patrol the **highest-risk 20% of cells** (Category 5):
 - Spatial features add value over location alone
 
 **Random patrol:** Would capture ~20% (by chance)
-
----
-
-## Visualizing Model vs. KDE Performance
-
-
-![](images/model_compare.png)
 
 ---
 
