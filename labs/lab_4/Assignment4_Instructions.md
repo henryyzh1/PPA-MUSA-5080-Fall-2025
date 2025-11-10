@@ -76,10 +76,7 @@ Work through all major sections of the analysis:
 - Calculate and report error metrics (MAE, RMSE)
 
 #### Part 6: Model Evaluation
-- Generate final predictions for both years
 - Compare to KDE baseline
-- Map prediction errors for 2018
-- Assess model performance across time
 
 #### CHALLENGE TASK: Temporal Validation (2018) *not mandatory, only if you want very strong spatial analytics muscles*
 - Download 2018 crimes https://data.cityofchicago.org/Public-Safety/Crimes-2018/3i3m-jwuy/about_data
