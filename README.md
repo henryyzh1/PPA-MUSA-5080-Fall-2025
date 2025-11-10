@@ -20,7 +20,7 @@
 - [Week 6: Spatial Machine Learning - Linear Regression Cont.](https://musa-5080-fall-2025.github.io/MUSA-5080-Fall-2025/lectures/week-06/lecture/week6_slides.html)
 - [Week 7: Spatial Machine Learning - Spatial Autocorrelation](https://musa-5080-fall-2025.github.io/MUSA-5080-Fall-2025/lectures/week-07/lecture/week7_slides.html)
 - [Week 9: Predictive Policing, Dirty Data, and Count Regression](https://musa-5080-fall-2025.github.io/MUSA-5080-Fall-2025/lectures/week-09/lecture/Week9_slides.html)
-- [Week 10: Logistic Regression - The case of recidivism](https://musa-5080-fall-2025.github.io/MUSA-5080-Fall-2025/lectures/week-10/lecture/Week10_slides.html)
+- [Week 10: Logistic Regression - The case of recidivism](https://musa-5080-fall-2025.github.io/MUSA-5080-Fall-2025/lectures/week-10/lecture/week10_slides.html)
 ## Labs 
 - [Lab setup instructions](https://musa-5080-fall-2025.github.io/MUSA-5080-Fall-2025/labs/lab_setup_instructions.html)
 - [Lab 0 Template](labs/lab_0/lab0_template.qmd)
