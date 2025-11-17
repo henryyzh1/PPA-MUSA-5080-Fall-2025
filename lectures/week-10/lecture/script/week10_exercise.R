@@ -17,7 +17,8 @@
 # Load required packages
 library(tidyverse)   # For data manipulation and visualization
 library(caret)       # For model training and confusion matrices
-library(pROC)        # For ROC curves and AUC
+library(pROC)  
+library(here) # For ROC curves and AUC
 
 # Set random seed for reproducibility
 set.seed(2025)
