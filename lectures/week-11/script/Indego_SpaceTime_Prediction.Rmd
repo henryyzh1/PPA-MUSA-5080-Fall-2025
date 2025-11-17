@@ -137,7 +137,7 @@ census_api_key("YOUR_KEY_HERE", overwrite = TRUE, install = TRUE)
 
 ```{r census_key_hidden, include=FALSE}
 # Hidden key for rendering
-census_api_key("YOUR_Key_Here", overwrite = TRUE)
+census_api_key("Your Key Here")
 ```
 
 ---
@@ -976,13 +976,13 @@ station_errors <- test %>%
 # Calculate station errors
 station_errors <- test %>%
   filter(!is.na(pred2)) %>%
-  group_by(start_station, start_lat, start_lon) %>%
+  group_by(start_station, start_lat.x, start_lon.y) %>%
   summarize(
     MAE = mean(abs(Trip_Count - pred2), na.rm = TRUE),
     avg_demand = mean(Trip_Count, na.rm = TRUE),
     .groups = "drop"
   ) %>%
-  filter(!is.na(start_lat), !is.na(start_lon))
+  filter(!is.na(start_lat.x), !is.na(start_lon.y))
 
 # Map 1: Prediction Errors
 p1 <- ggplot() +
@@ -1022,7 +1022,7 @@ p2 <- ggplot() +
   geom_sf(data = philly_census, fill = "grey95", color = "white", size = 0.2) +
   geom_point(
     data = station_errors,
-    aes(x = start_lon, y = start_lat, color = avg_demand),
+    aes(x = start_lon.y, y = start_lat.x, color = avg_demand),
     size = 3.5,
     alpha = 0.7
   ) +
@@ -1050,16 +1050,7 @@ p2 <- ggplot() +
     title.hjust = 0.5
   ))
 
-# Combine with better layout
-library(gridExtra)
-grid.arrange(
-  p1, p2, 
-  ncol = 2,
-  top = textGrob(
-    "Model 2 Performance: Errors vs. Demand Patterns",
-    gp = gpar(fontsize = 16, fontface = "bold")
-  )
-)
+
 
 
 # Map 1: Prediction Errors
