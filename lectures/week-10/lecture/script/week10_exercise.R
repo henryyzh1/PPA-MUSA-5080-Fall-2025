@@ -17,8 +17,13 @@
 # Load required packages
 library(tidyverse)   # For data manipulation and visualization
 library(caret)       # For model training and confusion matrices
+<<<<<<< Updated upstream
 library(pROC)  
 library(here) # For ROC curves and AUC
+=======
+library(pROC)        # For ROC curves and AUC
+library(here)
+>>>>>>> Stashed changes
 
 # Set random seed for reproducibility
 set.seed(2025)
@@ -499,3 +504,4 @@ ggplot(coef_df, aes(x = reorder(variable, Estimate), y = odds_ratio)) +
   )
 
 # The end!
+
